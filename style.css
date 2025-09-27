@@ -1109,6 +1109,50 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+/* Hackathon Stats */
+.hackathon__stats {
+    margin-top: var(--spacing-2xl);
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: var(--border-radius-xl);
+    border: 1px solid var(--color-border);
+}
+
+.stats__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.stat__item {
+    text-align: center;
+}
+
+.stat__number {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat__label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+/* Disabled button style */
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn.disabled:hover {
+    transform: none;
+    background: var(--color-primary);
+}
+
+
 
 
 
